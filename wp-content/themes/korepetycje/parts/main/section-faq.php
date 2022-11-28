@@ -17,5 +17,20 @@ $items = get_field('faq_wpisy');
                 </h4>
             <?php endif; ?>
         </div>
+        <?php if ($items) : ?>
+            <div class='home__faq_items'>
+                <?php foreach ($items as $item) : ?>
+                    <div class="home__faq_item">
+                        <h4 class="home__faq_item_title">
+                            <?= $item['title']; ?>
+                        </h4>
+                        <div class="home__faq_item_description">
+                            <?= $item['description']; ?>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+
+            </div>
+        <?php endif; ?>
     <?php endif; ?>
 </section>
