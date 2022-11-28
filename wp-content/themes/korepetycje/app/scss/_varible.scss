@@ -1,0 +1,50 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 768px;
+
+// Small tablets (portrait view)
+$screen-md-min: 992px;
+
+// Tablets and small desktops
+$screen-lg-min: 1200px;
+
+// Large tablets and desktops
+$screen-xl-min: 1440px;
+
+$screen-xxl-min: 1800px;
+
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+
+// Medium devices
+@mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+
+// Large devices
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+
+// Extra large devices
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+}
+
+@mixin xxl {
+    @media (min-width: #{$screen-xxl-min}) {
+        @content;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$raleway: 'Raleway', sans-serif;
